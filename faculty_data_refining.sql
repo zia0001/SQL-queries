@@ -38,5 +38,17 @@ SELECT  DISTINCT salary FROM faculty;
 SELECT * FROM faculty ORDER BY salary;
 SELECT * FROM faculty ORDER BY fname;
 
+      /*LIMIT Clause in 
+        -------- used to restrict the number of rows returned by a query. It is useful when retrieving a specific number of records*/
+SELECT * FROM faculty ORDER BY fname DESC
+LIMIT 4;
+
+      /*LIKE CLAUSE
+      ------- used in a WHERE clause to search for a specific pattern in a column, typically used with wildcards (% and _).*/
+SELECT * FROM faculty  WHERE fname LIKE 'Z%'; /* starting with*/
+SELECT * FROM faculty  WHERE fname LIKE '%d';/*ending with*/
+SELECT * FROM faculty  WHERE lname LIKE '%d%';/*between*/
+
+
 
 
